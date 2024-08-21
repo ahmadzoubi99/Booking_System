@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    Layout = null;
+}
+@{
+    var bookedDates = ViewBag.BookedDates as List<string>;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Calendar</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .ui-datepicker {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+            .ui-datepicker td.booked a {
+                background-color: #f00;
+                color: #fff;
+            }
+
+            .ui-datepicker td.available a {
+                background-color: #0f0;
+                color: #000;
+            }
+    </style>
+</head>
+<body>
+    <h1>Booking Calendar</h1>
+    <div id="datepicker"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            var bookedDates = @Html.Raw(Json.Serialize(bookedDates));
+
+            $("#datepicker").datepicker({
+                dateFormat: 'yy-mm-dd',
+                beforeShowDay: function (date) {
+                    var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+                    if (bookedDates.includes(formattedDate)) {
+                        return [true, 'booked', 'Booked'];
+                    } else {
+                        return [true, 'available', 'Available'];
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
