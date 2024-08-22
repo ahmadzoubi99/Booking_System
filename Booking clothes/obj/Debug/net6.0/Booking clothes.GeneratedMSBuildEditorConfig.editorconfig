@@ -298,24 +298,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cG9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/BookProgram.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rUHJvZ3JhbS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/ContactUS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VVMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/GetBookedDates.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRCb29rZWREYXRlcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/ProductDetails.cshtml]
@@ -328,10 +316,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG9wLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Home/SingleProduct.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaW5nbGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/ProductSizes/Create.cshtml]
@@ -356,14 +340,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Products/CreateError.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Products/CreateSuccess.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Coding School/Desktop/finalproject/new project/Booking clothes/Booking clothes/Views/Products/Delete.cshtml]
