@@ -96,76 +96,23 @@ namespace Booking_clothes.Controllers
             return View(product);
         }
 
-/*        public async Task<IActionResult> ProductDetails(int id, DateTime? startDate, DateTime? endDate)
-        {
-            var countOfItem = HttpContext.Session.GetInt32("countOfItem");
-            ViewBag.Count = countOfItem;
-            ViewBag.Id = id;
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            ViewData["UserId"] = userId;
-            ViewBag.ProductId = id;
 
-            var product = myContext.Products
-                .Include(c => c.productSizes)
-                .ThenInclude(cd => cd.Size)
-                .FirstOrDefault(c => c.Id == id);
-
-            // Check if the product exists
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            // Calculate the number of reviews
-            var countReview = myContext.Reviews.Where(r => r.ClothesId == id).Count();
-
-            // Calculate the average rating
-            if (countReview > 0)
-            {
-                var totalRating = myContext.Reviews.Where(r => r.ClothesId == id).Sum(r => r.Rating);
-
-                ViewBag.AverageRating = (double)totalRating / countReview;
-            }
-            else
-            {
-                ViewBag.AverageRating = 0; // No reviews yet
-            }
-
-            ViewBag.CountReview = countReview;
-
-            // Calculate the number of days between startDate and endDate
-            if (startDate.HasValue && endDate.HasValue)
-            {
-                var differenceInDays = (endDate.Value - startDate.Value).TotalDays;
-                ViewBag.DaysBetween = differenceInDays;
-            }
-            else
-            {
-                ViewBag.DaysBetween = "N/A"; // Handle cases where dates are not provided
-            }
-
-            ViewBag.StartDate = startDate.ToString("yyyy/MM/dd");
-            ViewBag.EndDate = endDate.ToString("yyyy/MM/dd");
-
-
-            return View(product);
-        }
-*/
         public async Task<IActionResult> Shop()
 		{
-
-
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
-            var products = myContext.Products.Include(c => c.Category).ToList();
-				var categories = myContext.Categories.ToList();
+            // Fetch all categories
+            var categories = await myContext.Categories.ToListAsync();
 
-				var model = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>>(categories, products);
+            // Fetch products that have at least one size associated
+            var productsWithSizes = await myContext.Products
+                .Where(p => myContext.ProductSize.Any(ps => ps.ProductId == p.Id))
+                .ToListAsync();
 
-			var product = await myContext.Products.ToListAsync();
+            var model = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>>(categories, productsWithSizes);
 
-            return View(model);
+            return View("Shop", model);
         }
 
 
@@ -205,12 +152,29 @@ namespace Booking_clothes.Controllers
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
-            var product=myContext.Products.Include(c => c.Category).Where(p=> p.Id==CategoryId).FirstOrDefault();
+            var product=myContext.Products.Include(c => c.Category).Include(c=>c.productSizes).Where(p=> p.Id==CategoryId).FirstOrDefault();
             return RedirectToAction("Shop", "Home");
         }
 
+        public async Task<IActionResult> ProductByCategorie(int id)
+        {
+            var countOfItem = HttpContext.Session.GetInt32("countOfItem");
+            ViewBag.Count = countOfItem;
 
-		public async Task<IActionResult> ProductByCategorie(int id)
+            // Fetch categories
+            var categories = await myContext.Categories.ToListAsync();
+
+            // Fetch products by category that have at least one size associated
+            var productsWithSizes = await myContext.Products
+                .Where(p => p.CategoryId == id && myContext.ProductSize.Any(ps => ps.ProductId == p.Id))
+                .ToListAsync();
+
+            var model = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>>(categories, productsWithSizes);
+
+            return View("Shop", model);
+        }
+
+/*        public async Task<IActionResult> ProductByCategorie(int id)
 		{
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem; 
@@ -221,21 +185,24 @@ namespace Booking_clothes.Controllers
 			var model = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>>(categories, products);
 
 			return View("Shop", model);
-		}
-
-		public async Task<IActionResult> AllProductInAllCategorie()
-		{
-            
-            var countOfItem= HttpContext.Session.GetInt32("countOfItem");
+		}*/
+        public async Task<IActionResult> AllProductInAllCategorie()
+        {
+            var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
-            var products = await myContext.Products.ToListAsync();
-			var categories = await myContext.Categories.ToListAsync();
 
-			var model = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>>(categories, products);
+            // Fetch all categories
+            var categories = await myContext.Categories.ToListAsync();
 
-			return View("Shop", model);
-		}
+            // Fetch products that have at least one size associated
+            var productsWithSizes = await myContext.Products
+                .Where(p => myContext.ProductSize.Any(ps => ps.ProductId == p.Id))
+                .ToListAsync();
 
+            var model = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>>(categories, productsWithSizes);
+
+            return View("Shop", model);
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
