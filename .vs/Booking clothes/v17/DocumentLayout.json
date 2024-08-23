@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -31,6 +34,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
+              "RelativeToolTip": "..\\..\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAApwDgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T17:09:53.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Shop.cshtml",
               "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Shop.cshtml",
               "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Shop.cshtml",
@@ -43,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
               "RelativeDocumentMoniker": "Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
@@ -51,12 +67,11 @@
               "RelativeToolTip": "Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
               "ViewState": "AQIAALkCAAAAAAAAAAAgwMoCAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:07:18.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T17:07:18.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Reservation.cshtml",
               "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Reservation.cshtml",
               "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Reservation.cshtml",
@@ -64,12 +79,11 @@
               "RelativeToolTip": "Booking clothes\\Views\\Home\\Reservation.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:06:41.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T17:06:41.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ContactUS.cshtml",
               "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\ContactUS.cshtml",
               "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\ContactUS.cshtml",
@@ -77,8 +91,7 @@
               "RelativeToolTip": "Booking clothes\\Views\\Home\\ContactUS.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:06:16.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T17:06:16.269Z"
             }
           ]
         }
