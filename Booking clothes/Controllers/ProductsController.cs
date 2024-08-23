@@ -103,7 +103,6 @@ namespace Booking_clothes.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Description,Color,CategoryId,PricePerDay,Availability,DiscountValue,Stock,CreatedAt,IsDeleted,ImageFile1,ImageFile2,ImageFile3")] Products products)
         {
-    
             try
             {
                 if (products.ImageFile1 != null)
@@ -148,17 +147,13 @@ namespace Booking_clothes.Controllers
 
                 _context.Add(products);
                 await _context.SaveChangesAsync();
-/*                return View("CreateSuccess");
-*/
+
                 return Json(new { success = true, message = "Product created successfully!" });
             }
             catch (Exception ex)
             {
-/*                return View("CreateError");
-*/
                 // Log the exception (optional)
                 return Json(new { success = false, message = "An error occurred while creating the product. Please try again." });
-
             }
         }
 
@@ -188,19 +183,16 @@ namespace Booking_clothes.Controllers
         {
             if (id != products.Id)
             {
-                return NotFound();
+                return Json(new { success = false, message = "Product not found." });
             }
 
-           
-                try
-                {
+            try
+            {
                 if (products.ImageFile1 != null)
                 {
                     string wwwRootPath = webHostEnvironment.WebRootPath;
-
-                    string fileName = Guid.NewGuid().ToString() + products.ImageFile1.FileName;
-
-                    string path = Path.Combine(wwwRootPath + "/Images/" + fileName);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(products.ImageFile1.FileName);
+                    string path = Path.Combine(wwwRootPath, "Images", fileName);
 
                     using (var fileStream = new FileStream(path, FileMode.Create))
                     {
@@ -212,10 +204,8 @@ namespace Booking_clothes.Controllers
                 if (products.ImageFile2 != null)
                 {
                     string wwwRootPath = webHostEnvironment.WebRootPath;
-
-                    string fileName = Guid.NewGuid().ToString() + products.ImageFile2.FileName;
-
-                    string path = Path.Combine(wwwRootPath + "/Images/" + fileName);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(products.ImageFile2.FileName);
+                    string path = Path.Combine(wwwRootPath, "Images", fileName);
 
                     using (var fileStream = new FileStream(path, FileMode.Create))
                     {
@@ -227,10 +217,8 @@ namespace Booking_clothes.Controllers
                 if (products.ImageFile3 != null)
                 {
                     string wwwRootPath = webHostEnvironment.WebRootPath;
-
-                    string fileName = Guid.NewGuid().ToString() + products.ImageFile3.FileName;
-
-                    string path = Path.Combine(wwwRootPath + "/Images/" + fileName);
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(products.ImageFile3.FileName);
+                    string path = Path.Combine(wwwRootPath, "Images", fileName);
 
                     using (var fileStream = new FileStream(path, FileMode.Create))
                     {
@@ -241,23 +229,25 @@ namespace Booking_clothes.Controllers
                 }
 
                 _context.Update(products);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
+                await _context.SaveChangesAsync();
+
+                return Json(new { success = true, message = "Product updated successfully!" });
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductsExists(products.Id))
                 {
-                    if (!ProductsExists(products.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    return Json(new { success = false, message = "Product not found." });
                 }
-                return RedirectToAction(nameof(Index));
-            
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "CategoryName", products.CategoryId);
-            return View(products);
+                else
+                {
+                    throw;
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "An error occurred while updating the product." });
+            }
         }
 
         // GET: Products/Delete/5
@@ -291,23 +281,27 @@ namespace Booking_clothes.Controllers
         }
 
         // POST: Products/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Products == null)
             {
-                return Problem("Entity set 'MyContext.Products'  is null.");
+                return Json(new { success = false, message = "Entity set 'MyContext.Products' is null." });
             }
-            var products = await _context.Products.FindAsync(id);
-            if (products != null)
+
+            var product = await _context.Products.FindAsync(id);
+            if (product != null)
             {
-                _context.Products.Remove(products);
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+                return Json(new { success = true, message = "Product deleted successfully." });
             }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return Json(new { success = false, message = "Product not found." });
         }
+
         [HttpPost]
         public async Task<IActionResult> SearchByProducttName(string? name)
         {

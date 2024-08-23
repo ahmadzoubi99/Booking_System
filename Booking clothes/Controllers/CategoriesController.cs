@@ -57,13 +57,26 @@ namespace Booking_clothes.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CategoryName,IsDeleted")] Category category)
         {
-           
-                _context.Add(category);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            
-            return View(category);
+            try
+            {
+                
+                    _context.Add(category);
+                    await _context.SaveChangesAsync();
+                    return Json(new { success = true, message = "Category created successfully." });
+                
+
+                // If the model state is invalid, return an error response
+                return Json(new { success = false, message = "Failed to create category. Please check the inputs." });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                // _logger.LogError(ex, "An error occurred while creating the category.");
+
+                return Json(new { success = false, message = "An error occurred while creating the category." });
+            }
         }
+
 
         // GET: Categories/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -136,32 +149,24 @@ namespace Booking_clothes.Controllers
         // POST: Categories/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int Id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var category = _context.Categories.Where(c => c.Id == Id).FirstOrDefault();
-
-            category.IsDeleted = true;
-
-            try
+            if (_context.Categories == null)
             {
-                _context.Update(category);
+                return Json(new { success = false, message = "Entity set 'Categories' is null." });
+            }
+
+            var category = await _context.Categories.FindAsync(id);
+            if (category != null)
+            {
+                _context.Categories.Remove(category);
                 await _context.SaveChangesAsync();
+                return Json(new { success = true, message = "Category deleted successfully." });
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CategoryExists(category.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return RedirectToAction(nameof(Index));
 
-          
+            return Json(new { success = false, message = "Category not found." });
         }
+
 
         private bool CategoryExists(int id)
         {

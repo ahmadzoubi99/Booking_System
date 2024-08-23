@@ -136,26 +136,38 @@ namespace Booking_clothes.Controllers
                 return NotFound();
             }
 
-            return View(size);
+            return RedirectToAction("index","sizes");
         }
 
         // POST: Sizes/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Sizes == null)
+            try
             {
-                return Problem("Entity set 'MyContext.Sizes'  is null.");
+                if (_context.Sizes == null)
+                {
+                    return Json(new { success = false, message = "Entity set 'MyContext.Sizes' is null." });
+                }
+
+                var size = await _context.Sizes.FindAsync(id);
+                if (size != null)
+                {
+                    _context.Sizes.Remove(size);
+                    await _context.SaveChangesAsync();
+                    return Json(new { success = true, message = "Size deleted successfully!" });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Size not found." });
+                }
             }
-            var size = await _context.Sizes.FindAsync(id);
-            if (size != null)
+            catch (Exception ex)
             {
-                _context.Sizes.Remove(size);
+                // Log the exception (optional)
+                return Json(new { success = false, message = "An error occurred while deleting the size. Please try again." });
             }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
         }
 
         private bool SizeExists(int id)

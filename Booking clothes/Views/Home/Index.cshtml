@@ -2,15 +2,8 @@
     ViewData["Title"] = "Home Page";
     Layout = "HomeLayout2";
 }
-<style>
-    .navbar-light .navbar-nav .nav-link {
-        padding: 20px 30px;
-        color: #1C1C1C;
-        outline: none;
-    }
 
-</style>
-
+<link href="~/TestimonialSlider/StyleSheet.css"/>
 <div class="container-fluid mb-5">
 <div class="row border-top px-xl-5">
     <div class="col-lg-12">
@@ -521,8 +514,6 @@
 </div>
 <!-- Vendor End -->
 
-
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
     @if (TempData["PaymentSuccess"] != null)
@@ -538,4 +529,6 @@
         </text>
     }
         });
+</script>
+
 </script>
