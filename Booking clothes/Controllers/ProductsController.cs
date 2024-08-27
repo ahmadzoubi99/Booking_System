@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Booking_clothes.Data;
 using Booking_clothes.Models;
+using System.Security.Claims;
 
 namespace Booking_clothes.Controllers
 {
@@ -22,15 +23,54 @@ namespace Booking_clothes.Controllers
             this.webHostEnvironment = webHostEnvironment;
         }
 
+
         public async Task<IActionResult> ReviewsByProductId(int id)
         {
-            var myContext = _context.Reviews.Include(o => o.Products).Where(p => p.ClothesId == id);
-            return View(await myContext.ToListAsync());
+            var myContext = _context.Reviews.Include(o => o.Products).Where(p => p.ClothesId == id).Include(r=>r.User).ToListAsync();
+            return View(await myContext);
         }
         // GET: Reservations
- 
 
         public IActionResult Reservation(int clothId)
+        {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
+            var countOfItem = HttpContext.Session.GetInt32("countOfItem");
+            ViewBag.Count = countOfItem;
+
+            DateTime today = DateTime.Today;
+            DateTime endDate = today.AddMonths(2); // Show two months at a time
+
+            // Fetch all reservation details for the specific ClothId within the date range
+            var reservations = _context.ReservationDetails
+                .Where(rd => rd.ClothId == clothId && rd.StartReservationDate <= endDate && rd.EndReservationDate >= today)
+                .GroupBy(rd => rd.ReservationId) // Group by ReservationId to get unique reservations
+                .Select(g => new
+                {
+                    ReservationId = g.Key,
+                    StartReservationDate = g.Min(rd => rd.StartReservationDate),
+                    EndReservationDate = g.Max(rd => rd.EndReservationDate)
+                })
+                .ToList();
+
+            // Calculate reserved dates
+            var reservedDates = reservations
+                .SelectMany(r => Enumerable.Range(0, 1 + (r.EndReservationDate - r.StartReservationDate).Days)
+                .Select(offset => r.StartReservationDate.AddDays(offset)))
+                .ToList();
+
+            ViewBag.ReservedDates = reservedDates;
+            var Products = _context.Products.Where(p => p.Id == clothId).SingleOrDefault();
+      
+            ViewBag.ClothId = clothId;
+
+            return View();
+        }
+
+/*        public IActionResult Reservation(int clothId)
         {
             DateTime today = DateTime.Today;
             DateTime endDate = today.AddMonths(2); // Show two months at a time
@@ -60,7 +100,7 @@ namespace Booking_clothes.Controllers
 
             return View();
         }
-
+*/
 
 
         // GET: Products
@@ -279,6 +319,24 @@ namespace Booking_clothes.Controllers
 
             return View(product);
         }
+        public async Task<IActionResult> DeleteConfirmedReview(int id)
+        {
+            if (_context.Reviews == null)
+            {
+                return Json(new { success = false, message = "Entity set 'MyContext.Products' is null." });
+            }
+
+            var review = await _context.Reviews.FindAsync(id);
+            if (review != null)
+            {
+                _context.Reviews.Remove(review);
+                await _context.SaveChangesAsync();
+                return Json(new { success = true, message = "Review deleted successfully." });
+            }
+
+            return Json(new { success = false, message = "Review not found." });
+        }
+
 
         // POST: Products/Delete/5
         [HttpPost]
@@ -305,7 +363,7 @@ namespace Booking_clothes.Controllers
         [HttpPost]
         public async Task<IActionResult> SearchByProducttName(string? name)
         {
-            var product = _context.Products.AsQueryable();
+            var product = _context.Products.Include(p=>p.Category).AsQueryable();
 
             if (!string.IsNullOrEmpty(name))
             {

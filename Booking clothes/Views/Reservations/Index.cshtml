@@ -13,12 +13,9 @@
                     <h6 style="margin-bottom:20px">
                         Reservations
                     </h6>
-                    <p style="background-color:#d00e9a;padding:8px;display:inline">
-                        <a style="color:white" asp-action="Create">Create New</a>
-                    </p>
                     <div style="margin:10px">
                         <form asp-action="SearchByReservationrId" method="post" class="d-flex align-items-center">
-                            <input type="text" name="id" style="display:inline;width:700px;" class="form-control" placeholder="Search by user" />
+                            <input type="text" name="id" style="display:inline;width:700px;" class="form-control" placeholder="Search by user ID" />
                             <button type="submit" class="btn btn-primary ms-2" style="margin-right:3%">Search</button>
                         </form>
                     </div>
@@ -30,26 +27,26 @@
                             <thead>
 
                                 <tr>
-                                    <th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     @Html.DisplayNameFor(model => model.Id)
                                     </th>
-                                <th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     @Html.DisplayNameFor(model => model.User)
             </th>
-                                <th >
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     @Html.DisplayNameFor(model => model.ReservationDate)
             </th>
-                                <th >
+      @*                               <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     @Html.DisplayNameFor(model => model.Status)
-            </th>
-                                <th >
+            </th> *@
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     @Html.DisplayNameFor(model => model.TotalAmount)
             </th>
-                              
-                                <th >
+
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     @Html.DisplayNameFor(model => model.Address)
             </th>
-             <th >
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                     Reservarion Detalis
             </th>
             <th>Action</th>
@@ -68,9 +65,9 @@
                  <td class="align-middle text-center">
                      @Html.DisplayFor(modelItem => item.ReservationDate)
             </td>
-                 <td class="align-middle text-center">
+@*                  <td class="align-middle text-center">
                      @Html.DisplayFor(modelItem => item.Status)
-            </td>
+            </td> *@
                  <td class="align-middle text-center">
                      @Html.DisplayFor(modelItem => item.TotalAmount)
             </td>
@@ -81,13 +78,21 @@
                      @Html.DisplayFor(modelItem => item.Address.AddressLine1)
             </td>
                  <td class="align-middle text-center">
-                     <p style="color:white;background-color:#d00e9a;padding:8px;display:inline;margin-bottom:10px">
+                     <p style="display:inline;width:700px;background-color:#d00e9a;color:white" class="form-control">
                      @Html.ActionLink("Reservation Details", "ReservationDetails", "Reservations", new { id = item.Id }, null)
                      </p>
             </td>
             <td class="align-middle text-center">
-                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    <a asp-action="Edit" asp-route-id="@item.Id">
+                        <img src="~/Images/002-document-editor.png" alt="Alternate Text" />
+                        Edit
+                    </a>
+                    <br />
+                    <br />
+                    <a   asp-action="Delete" asp-route-id="@item.Id">
+                        <img src="~/Images/delete (3).png" alt="Alternate Text" />
+                        Delete
+                    </a>
             </td>
         </tr>
 }

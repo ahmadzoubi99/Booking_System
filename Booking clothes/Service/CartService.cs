@@ -33,7 +33,7 @@ namespace Booking_clothes.Service
                     StartDate= StartDate,
                     endDate = endDate,
                     NumberOfDaysRent = NumberOfDaysRent,
-                    Price = product.PricePerDay,
+                    Price = product.PricePerDay -( product.DiscountValue/100 *product.PricePerDay),
                     ImageUrl = product.Image1, // Assuming you're using the first image
 /*                    Quantity = quantity
 */                };

@@ -61,7 +61,7 @@ namespace Booking_clothes.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Quantity,SizeID,ProductId")] ProductSize productSize)
         {
-            
+            productSize.Quantity = 1;
                 _context.Add(productSize);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

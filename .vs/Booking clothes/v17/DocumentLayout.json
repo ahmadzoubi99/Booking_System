@@ -3,23 +3,179 @@
   "WorkspaceRootPath": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\shared\\homelayout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\shared\\homelayout2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\contactus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\contactus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\reservations\\reservationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\reservations\\reservationdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\reservations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\reservations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\reservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\reservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\service\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\admin\\useraccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\admin\\useraccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\bancks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\bancks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\testimonialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\testimonialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\testimonials\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\testimonials\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\productsizescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\productsizescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\sizes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\sizes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\productsizes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\productsizes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\products\\reviewsbyproductid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\products\\reviewsbyproductid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\products\\reservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\products\\reservation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\cart\\processcheckout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\cart\\processcheckout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\views\\addresses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\views\\addresses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Coding School\\Desktop\\finalproject\\eshopper-1.0.0\\checkout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\addressescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\banckscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\banckscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\controllers\\sizescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\controllers\\sizescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\models\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\models\\testimonial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|c:\\users\\coding school\\desktop\\booking system\\booking_system\\booking clothes\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F1F207-F953-4889-A277-392A0D59195D}|Booking clothes\\Booking clothes.csproj|solutionrelative:booking clothes\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,70 +184,580 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 216,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
-              "ToolTip": "C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
-              "RelativeToolTip": "..\\..\\finalproject\\new project\\Booking clothes\\Booking clothes\\Program.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAApwDgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:09:53.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Shop.cshtml",
-              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Shop.cshtml",
-              "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Shop.cshtml",
-              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Shop.cshtml",
-              "RelativeToolTip": "Booking clothes\\Views\\Home\\Shop.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:07:30.824Z",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Booking clothes\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T08:51:06.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeToolTip": "Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
-              "ViewState": "AQIAALkCAAAAAAAAAAAgwMoCAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:07:18.643Z"
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAtwIoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:05:00.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Reservation.cshtml",
-              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Reservation.cshtml",
-              "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Reservation.cshtml",
-              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Reservation.cshtml",
-              "RelativeToolTip": "Booking clothes\\Views\\Home\\Reservation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:06:41.557Z"
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAMwCwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:34:41.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\ContactUs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\ContactUs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\ContactUs\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\ContactUs\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T02:42:38.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T04:11:43.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ContactUS.cshtml",
               "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\ContactUS.cshtml",
               "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\ContactUS.cshtml",
               "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\ContactUS.cshtml",
               "RelativeToolTip": "Booking clothes\\Views\\Home\\ContactUS.cshtml",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAmwMkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T03:43:36.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeLayout2.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\HomeLayout2.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Shared\\HomeLayout2.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\HomeLayout2.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Shared\\HomeLayout2.cshtml",
+              "ViewState": "AQIAANMAAAAAAAAAAAAAAPAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T01:22:29.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Reservations\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Reservations\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Reservations\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Reservations\\Index.cshtml",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T03:59:49.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFwAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:21:34.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReservationDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Reservations\\ReservationDetails.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Reservations\\ReservationDetails.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Reservations\\ReservationDetails.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Reservations\\ReservationDetails.cshtml",
+              "ViewState": "AQIAADUAAAAAAAAAAAAiwEgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:00:35.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\ProductDetails.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\ProductDetails.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\ProductDetails.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Home\\ProductDetails.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAApwFIAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T03:52:15.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T00:52:50.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Shared\\AdminLayout.cshtml",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAgwM4AAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:08:17.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Reservation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Reservation.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Reservation.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Reservation.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Home\\Reservation.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T17:06:16.269Z"
+              "WhenOpened": "2024-08-27T01:55:54.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Service\\CartService.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Service\\CartService.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Service\\CartService.cs",
+              "RelativeToolTip": "Booking clothes\\Service\\CartService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwBkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T01:33:03.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Bancks\\Create.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Bancks\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Bancks\\Create.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Bancks\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T05:38:13.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:56:13.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\ProductSizes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\ProductSizes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\ProductSizes\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\ProductSizes\\Index.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAIAwwFAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:22:09.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TestimonialsController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\TestimonialsController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\TestimonialsController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\TestimonialsController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\TestimonialsController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAQwCoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T22:31:45.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\CartController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAADgvzEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:04:53.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Admin\\UserAccount.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Admin\\UserAccount.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Admin\\UserAccount.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Admin\\UserAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T05:37:37.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Admin\\Users.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Admin\\Users.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Admin\\Users.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Admin\\Users.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T05:41:11.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAgwEYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T05:33:05.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Testimonials\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Testimonials\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Testimonials\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Testimonials\\Index.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T05:12:21.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductSizesController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\ProductSizesController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\ProductSizesController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\ProductSizesController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\ProductSizesController.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAD4v6MAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T05:21:04.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Sizes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Sizes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Sizes\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Sizes\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAC8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:22:53.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAIAAAAAAAAAAAAApwIwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T01:15:06.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReviewsByProductId.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\ReviewsByProductId.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Products\\ReviewsByProductId.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\ReviewsByProductId.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Products\\ReviewsByProductId.cshtml",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAgwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:32:08.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Reservation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Reservation.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Products\\Reservation.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Reservation.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Products\\Reservation.cshtml",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAgwH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:43:29.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAHcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:43:00.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T01:26:12.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T04:07:09.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Cart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Cart\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Cart\\Checkout.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Cart\\Checkout.cshtml",
+              "ViewState": "AQIAAEQAAAAAAAAAAAApwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T00:07:12.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProcessCheckout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Cart\\ProcessCheckout.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Cart\\ProcessCheckout.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Cart\\ProcessCheckout.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Cart\\ProcessCheckout.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAApwDsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T00:44:46.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Products\\Create.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T00:37:26.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Shop.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Shop.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Home\\Shop.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Home\\Shop.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Home\\Shop.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIwAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T22:12:22.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Addresses\\Index.cshtml",
+              "RelativeDocumentMoniker": "Booking clothes\\Views\\Addresses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Views\\Addresses\\Index.cshtml",
+              "RelativeToolTip": "Booking clothes\\Views\\Addresses\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T00:54:58.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BancksController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\BancksController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\BancksController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\BancksController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\BancksController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:34:38.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SizesController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\SizesController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\SizesController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\SizesController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\SizesController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswC8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:34:17.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Models\\Address.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Models\\Address.cs",
+              "RelativeToolTip": "Booking clothes\\Models\\Address.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:22:49.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddressesController.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\AddressesController.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Controllers\\AddressesController.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Controllers\\AddressesController.cs",
+              "RelativeToolTip": "Booking clothes\\Controllers\\AddressesController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAADwvz0AAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T00:20:53.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "checkout.html",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\finalproject\\eshopper-1.0.0\\checkout.html",
+              "RelativeDocumentMoniker": "..\\..\\finalproject\\eshopper-1.0.0\\checkout.html",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\finalproject\\eshopper-1.0.0\\checkout.html",
+              "RelativeToolTip": "..\\..\\finalproject\\eshopper-1.0.0\\checkout.html",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAAAKkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-26T00:06:38.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Testimonial.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Models\\Testimonial.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Models\\Testimonial.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Models\\Testimonial.cs",
+              "RelativeToolTip": "Booking clothes\\Models\\Testimonial.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T22:43:55.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Booking clothes\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAiwJUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T19:22:21.708Z",
+              "EditorCaption": ""
             }
           ]
         }

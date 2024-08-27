@@ -34,38 +34,51 @@
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         @Html.DisplayNameFor(model => model.CreatedAt)
                                     </th>
-                                    <th>
-                                        action
-                                    </th>
+
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model)
-                                {
+                            <tbody>
+                            <tbody>
+                                        @foreach (var item in Model)
+                                        {
                                     <tr>
                                         <td class="align-middle text-center">
-                                            @Html.DisplayFor(modelItem => item.User.FirstName + " " + item.User.LastName)
+                                                    @if (item.User != null)
+                                                    {
+                                                        @item.User.FirstName @item.User.LastName
+                                                    }
+                                                    else
+                                                    {
+                                                <span></span>
+                                                    }
                                         </td>
 
                                         <td class="align-middle text-center">
-                                            @Html.DisplayFor(modelItem => item.Products.Name)
+                                                    @if (item.Products != null)
+                                                    {
+                                                        @Html.DisplayFor(modelItem => item.Products.Name)
+                                                    }
+                                                    else
+                                                    {
+                                                <span> </span>
+                                                    }
                                         </td>
+
                                         <td class="align-middle text-center">
-                                            @Html.DisplayFor(modelItem => item.Rating)
+                                                    @Html.DisplayFor(modelItem => item.Rating)
                                         </td>
+
                                         <td class="align-middle text-center">
-                                            @Html.DisplayFor(modelItem => item.ReviewText)
+                                                    @Html.DisplayFor(modelItem => item.ReviewText)
                                         </td>
+
                                         <td class="align-middle text-center">
-                                            @Html.DisplayFor(modelItem => item.CreatedAt)
+                                                    @Html.DisplayFor(modelItem => item.CreatedAt)
                                         </td>
-                                        <td class="align-middle text-center">
-                                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                                        </td>
+
                                     </tr>
-                                }
+                                        }
                             </tbody>
                         </table>
                     </div>
@@ -74,3 +87,4 @@
         </div>
     </div>
 </div>
+

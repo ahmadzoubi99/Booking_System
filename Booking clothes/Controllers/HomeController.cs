@@ -28,21 +28,40 @@ namespace Booking_clothes.Controllers
 
         public IActionResult ContactUS()
         {
+            if(User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
             return View();
         }
         public IActionResult Index()
         {
+            var products = myContext.Products.Include(c => c.Category).ToList();
+            var categories = myContext.Categories.ToList();
+            var testimonials = myContext.Testimonials.Include(u => u.User).Where(t => t.Status == "Approved").ToList();
+            var model3 = Tuple.Create<IEnumerable<Category>, IEnumerable<Products>, IEnumerable<Testimonial>>(categories, products, testimonials);
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var user=myContext.ApplicationUsers.Where(u=>u.Id == userId).FirstOrDefault();
-            return View();
-        }
+            var user = myContext.ApplicationUsers.Where(u => u.Id == userId).FirstOrDefault();
+
+            return View("Index", model3);
+            }
+
+
         public async Task<IActionResult> ProductDetails(int id, DateTime? startDate, DateTime? endDate)
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
 
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
@@ -99,6 +118,11 @@ namespace Booking_clothes.Controllers
 
         public async Task<IActionResult> Shop()
 		{
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
@@ -119,6 +143,10 @@ namespace Booking_clothes.Controllers
             [HttpPost]
 		public async Task<IActionResult> Reservations(DateTime startDate, DateTime endDate, int size, int quantity, int clothId)
 		{
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
 
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
@@ -148,6 +176,10 @@ namespace Booking_clothes.Controllers
 
         public async Task<IActionResult> GetProductByCategory(int CategoryId)
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
 
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
@@ -158,6 +190,11 @@ namespace Booking_clothes.Controllers
 
         public async Task<IActionResult> ProductByCategorie(int id)
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
@@ -188,6 +225,11 @@ namespace Booking_clothes.Controllers
 		}*/
         public async Task<IActionResult> AllProductInAllCategorie()
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
@@ -208,6 +250,11 @@ namespace Booking_clothes.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateContact(string Name, string Email, string Subject, string Message, DateTime CreatedAt)
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
@@ -237,6 +284,11 @@ namespace Booking_clothes.Controllers
 
         public IActionResult Reservation(int clothId)
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem; 
 
@@ -271,6 +323,11 @@ namespace Booking_clothes.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateReview(string UserId, int ProductId, int Rating, string ReviewText)
         {
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId != null)
             {
@@ -294,6 +351,11 @@ namespace Booking_clothes.Controllers
 
         public async Task<IActionResult> SearchByProducttName(string? name)
 		{
+            if (User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+            {
+                ViewBag.userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
             var countOfItem = HttpContext.Session.GetInt32("countOfItem");
             ViewBag.Count = countOfItem;
 
@@ -320,5 +382,42 @@ namespace Booking_clothes.Controllers
 		}
 
 
-	}
+        public IActionResult CTestimonial()
+        {
+            var count = HttpContext.Session.GetInt32("countOfItem");
+            ViewBag.Count = HttpContext.Session.GetInt32("countOfItem");
+
+            return View();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CTestimonial([Bind("Id,UserId,TestimonialText,IsDeleted,CreatedAt,Status")] Testimonial testimonial)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = myContext.Users.Where(u => u.Id == userId).FirstOrDefault();
+
+            testimonial.UserId = userId;
+            testimonial.Status = "Pending";
+
+
+            myContext.Add(testimonial);
+            await myContext.SaveChangesAsync();
+
+            // Redirect to the Index action
+            return RedirectToAction(nameof(Index));
+
+
+            // If the model state is not valid, set the ViewData and return the view
+            ViewData["UserId"] = new SelectList(myContext.Users, "Id", "Id", testimonial.UserId);
+            return View(testimonial);
+        }
+
+        private bool TestimonialExists(int id)
+        {
+            return (myContext.Testimonials?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+    }
 }

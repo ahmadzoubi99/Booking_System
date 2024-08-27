@@ -1,5 +1,6 @@
 ﻿using Booking_clothes.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Booking_clothes.Controllers
 {
@@ -11,11 +12,11 @@ namespace Booking_clothes.Controllers
             this._context = context;
                 
         }
-        public IActionResult UserAccount()
+/*        public IActionResult UserAccount()
         {
             var user = _context.ApplicationUsers.FirstOrDefault();
             return View(user);
-        }
+        }*/
 
         public IActionResult category()
         {
@@ -34,14 +35,21 @@ namespace Booking_clothes.Controllers
             ViewBag.userCount = _context.ApplicationUsers.Count();
             // Calculate the total sales for the last day
             var yesterday = DateTime.Now.Date.AddDays(-1);
-            var today = DateTime.Now.Date;
-            var lastDaySales = _context.Reservations
+            var today = DateTime.Now.Date.AddDays(1);
+/*            var today = DateTime.Now.Date;
+*/            var lastDaySales = _context.Reservations
                                        .Where(p => p.ReservationDate >= yesterday && p.ReservationDate < today)
                                        .Sum(p => (decimal?)p.TotalAmount) ?? 0;
             ViewBag.lastDaySales = lastDaySales;
             return View();
         }
 
+        public async Task<IActionResult> UserAccount()
+        {
+            var users = await _context.Users.ToListAsync();
+            return View(users);
+
+        }
 
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p9hoKS0LPzI=",
+  "dgSpecHash": "AXobLPVFELk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Coding School\\Desktop\\finalproject\\new project\\Booking clothes\\Booking clothes\\Booking clothes.csproj",
+  "projectFilePath": "C:\\Users\\Coding School\\Desktop\\booking system\\Booking_System\\Booking clothes\\Booking clothes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Coding School\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Coding School\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -18,6 +18,69 @@ namespace Booking_clothes.Controllers
         {
             _context = context;
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Accept(decimal id, [Bind("Id,UserId,TestimonialText,IsDeleted,CreatedAt,Status")] Testimonial testimonial)
+        {
+            if (id != testimonial.Id)
+            {
+                return NotFound();
+            }
+            try
+            {
+                testimonial.Status = "Approved";
+                _context.Update(testimonial);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!TestimonialExists(testimonial.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+
+            ViewData["UserAccountId"] = new SelectList(_context.Users, "Id", "Id", testimonial.UserId);
+            return View(testimonial);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Reject(decimal id, [Bind("Id,UserId,TestimonialText,IsDeleted,CreatedAt,Status")] Testimonial testimonial)
+        {
+            if (id != testimonial.Id)
+            {
+                return NotFound();
+            }
+            try
+            {
+                testimonial.Status = "Reject";
+                _context.Update(testimonial);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!TestimonialExists(testimonial.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+
+            ViewData["UserAccountId"] = new SelectList(_context.Users, "Id", "Id", testimonial.UserId);
+            return View(testimonial);
+        }
+
+
 
         // GET: Testimonials
         public async Task<IActionResult> Index()

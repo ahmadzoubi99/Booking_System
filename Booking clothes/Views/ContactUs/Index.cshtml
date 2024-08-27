@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<Booking_clothes.Models.ContactUs>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "AdminLayout";
+    Layout = "AdminLayout";
 }
 <div class="container-fluid py-4">
     <div class="row">
@@ -17,9 +18,6 @@
                         <table class="table align-items-center mb-0">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -41,9 +39,6 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.User.Id)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
@@ -63,6 +58,7 @@
 }
     </tbody>
 </table>
+</div>
 </div>
 </div>
 </div>

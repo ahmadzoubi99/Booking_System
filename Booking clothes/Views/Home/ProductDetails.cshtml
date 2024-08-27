@@ -80,23 +80,14 @@
                 <span>(@ViewBag.AverageRating Rating)</span>
                 <span>(@ViewBag.countReview Reviews)</span>
             </div>
-            <h6>Descount :  <span style="color:red">(@Model.DiscountValue%)</span> <del>$@Model.PricePerDay</del> </h6>
+            <h6>Descount :$@(@Model.PricePerDay - (@Model.DiscountValue / 100) * @Model.PricePerDay)  <span style="color:red">(@Model.DiscountValue%)</span> <del>$@Model.PricePerDay</del> </h6>
 @*             <h6>Price Per Day :  $@(Model.PricePerDay - (Model.DiscountValue / 100) * Model.PricePerDay) per day</h6><h6 class="text-muted ml-2"><del>$@Model.PricePerDay</del></h6>
  *@            
             <h3 class="font-weight-semi-bold mb-4">Price Per Day : $@(@Model.PricePerDay - (@Model.DiscountValue / 100) * @Model.PricePerDay) per day</h3>
             <p class="mb-4">@Model.Description</p>
 
             <!-- Size Options -->
-            <div class="d-flex mb-3">
-                <p style="font-weight:bold">Sizes:  </p>
-                @foreach (var detail in Model.productSizes.Select(cd => cd.Size).Distinct())
-                {
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" id="size-@detail.Id" name="size" value="@detail.SizeName">
-                        <label class="custom-control-label" for="size-@detail.Id">@detail.SizeName</label>
-                    </div>
-                }
-            </div>
+
             <!-- Color Options -->
             <div class="d-flex mb-4">
                 <p class="text-dark font-weight-medium mb-0 mr-3">Colors: @Model.Color</p>
@@ -105,11 +96,20 @@
             <form asp-action="Reservation" method="post">
                 <div class="d-flex mb-3">
                     <input hidden type="number" name="clothId" value="@ViewBag.Id" />
-                    <button type="submit">Specify the booking</button>
+                    <button class="btn btn-primary ml-3" type="submit">Specify the booking</button>
                 </div>
             </form>
             <form asp-action="AddToCart" asp-controller="Cart">
-
+                <div class="d-flex mb-3">
+                    <p style="font-weight:bold">Sizes:  </p>
+                    @foreach (var detail in Model.productSizes.Select(cd => cd.Size).Distinct())
+                    {
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-@detail.Id" name="size" value="@detail.SizeName">
+                            <label class="custom-control-label" for="size-@detail.Id">@detail.SizeName</label>
+                        </div>
+                    }
+                </div>
                 @if (@ViewBag.startDate !=null )
                 {
             <div class="form-group">

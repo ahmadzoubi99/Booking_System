@@ -11,7 +11,7 @@
             <div class="card mb-4">
                 <div class="card-header pb-0">
                     <h6 style="margin-bottom:20px">Size</h6>
-                    <p style="background-color:#d00e9a;padding:8px;display:inline">
+                    <p class="form-control" style="background-color:#d00e9a;padding:8px;display:inline;margin-top:10px ">
                         <a style="color:white" asp-action="Create">Create New</a>
                     </p>
                 </div>
@@ -20,10 +20,13 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <td class="align-middle text-center" style="font-size:18px">
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         @Html.DisplayNameFor(model => model.SizeName)
-                                    </td>
-                                    <th>Action</th>
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action
+
+
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -33,10 +36,16 @@
                                         <td class="align-middle text-center">
                                             @Html.DisplayFor(modelItem => item.SizeName)
                                         </td>
-                                        <td>
-                                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                            <a href="#" onclick="deleteItem(@item.Id); return false;">Delete</a>
+                                        <td class="align-middle text-center">
+                                            <a asp-action="Edit" asp-route-id="@item.Id">
+                                                <img src="~/Images/002-document-editor.png" alt="Alternate Text" />
+                                                Edit</a> 
+                                                <br />
+                                                <br />
+                                            <a href="#"  onclick="deleteItem(@item.Id); return false;">
+                                                <img src="~/Images/delete (3).png" alt="Alternate Text" />
+                                                Delete
+                                            </a>
                                         </td>
                                     </tr>
                                 }

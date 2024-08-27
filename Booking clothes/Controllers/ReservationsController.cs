@@ -27,7 +27,9 @@ namespace Booking_clothes.Controllers
         public async Task<IActionResult> ReservationDetails(int id)
         {
             var myContext = _context.ReservationDetails.Include(o => o.Reservation).Include(o => o.products).Where(p => p.ReservationId == id);
-            var orderById = _context.Reservations.Where(p => p.Id == id).FirstOrDefault();
+            var Reservation = _context.Reservations.Where(p => p.Id == id).Include(u=>u.User).FirstOrDefault();
+            ViewBag.TotalAmount = Reservation.TotalAmount;
+            ViewBag.userName = Reservation.User.FirstName+" "+ Reservation.User.LastName;
 
             return View(await myContext.ToListAsync());
         }

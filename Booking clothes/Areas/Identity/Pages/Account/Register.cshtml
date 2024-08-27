@@ -23,13 +23,9 @@
                 <h4>First Name</h4>
                 <div class="username-input">
                     <i class="fas fa-user"></i>
-                    @*                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                    *@                 
+                    <input asp-for="Input.FirstName" autocomplete="current-password" placeholder="Last name" aria-required="true" />
                     <label hidden asp-for="Input.FirstName" class="form-label"></label>
-                    <br />
-                    <span  asp-for="Input.FirstName"></span>
-                    <br />
-                    <input asp-for="Input.FirstName" aria-required="true" placeholder="First name">
+                    <span hidden asp-validation-for="Input.FirstName" class="text-danger"></span>
                 </div>
                 <h4>Last Name</h4>
                 <div class="username-input">
@@ -73,16 +69,15 @@
                     <label hidden asp-for="Input.Address" class="form-label"></label>
                     <span hidden asp-validation-for="Input.Address" class="text-danger"></span>
                 </div>
-            
                 <p>Forgot password?</p>
             </div>
             <button id ="registerSubmit" type="submit" class="login-btn">
                 Reigister
             </button>
-            <div class="alternative-signup">
-                <p>Not a member? <span>Sign-up</span></p>
-            </div>
         </form>
+            <div class="alternative-signup">
+                <p>Not a member? <span> <a href="/Identity/Account/Register" class="nav-item nav-link">Sign-in</a></span></p>
+            </div>
     </section>
 
 </body>

@@ -27,6 +27,8 @@ namespace Booking_clothes.Controllers
         {
 
             var cartItems = _cartService.GetCart();
+            var totalAmount = _cartService.GetCart().Sum(item => item.Price * item.NumberOfDaysRent + item.Price * 0.5m);
+            ViewBag.totalAmount = totalAmount;
             return View(cartItems);
         }
 
@@ -42,15 +44,16 @@ namespace Booking_clothes.Controllers
             // Ideally, you would retrieve the product from the database using the productId
             var product = context.Products.Where(p => p.Id == productId).FirstOrDefault();
             var differenceInDays = (endDate - startDate).TotalDays;
-
+     
             if (product != null)
             {
+                
                 _cartService.AddToCart(product, size, startDate, endDate, (int)differenceInDays);
                 var cart = _cartService.GetCart();
                 var countOfItem = cart.Count();
                 HttpContext.Session.SetInt32("countOfItem", countOfItem);
                 ViewBag.Count = countOfItem;
-                return RedirectToAction("Index");
+                return RedirectToAction("shop","Home");
             }
 
             return NotFound();
@@ -93,23 +96,25 @@ namespace Booking_clothes.Controllers
             {
                 return RedirectToAction("Login", "Account", new { area = "Identity" });
             }
-            return View();
+            var cartItems = _cartService.GetCart();
+
+            return View(cartItems);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Checkout(string CVV, string CardNumber, string cardHolder, DateTime expiryDate)
         {
             var accountInBank = await context.Banck
-                .Where(b => b.CVV == CVV&&
-                            b.CardHolder == cardHolder&&
-                            b.CardNumber==CardNumber
+                .Where(b => b.CVV == CVV
+                       /*     b.CardHolder == cardHolder&&
+                            b.CardNumber==CardNumber*/
                 )
                 .FirstOrDefaultAsync();
 
             if (accountInBank != null)
             {
                 var totalAmount = _cartService.GetCart().Sum(item => item.Price * item.NumberOfDaysRent + item.Price * 0.5m);
-
+                ViewBag.totalAmount= totalAmount;
                 if (accountInBank.Balance >= totalAmount)
                 {
                     try

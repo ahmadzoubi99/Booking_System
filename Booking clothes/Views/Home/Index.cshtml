@@ -2,6 +2,16 @@
     ViewData["Title"] = "Home Page";
     Layout = "HomeLayout2";
 }
+@model Tuple<IEnumerable<Category>, IEnumerable<Products>,IEnumerable<Testimonial>>;
+
+<style>
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -40px;
+        margin-left: -40px;
+    }
+</style>
 
 <link href="~/TestimonialSlider/StyleSheet.css"/>
 <div class="container-fluid mb-5">
@@ -10,25 +20,25 @@
        
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" style="height: 410px;">
-                    <img class="img-fluid" src="~/HomeAssets2/img/carousel-1.jpg" alt="Image">
+                <div class="carousel-item active" style="height: 60%;">
+                    <img class="img-fluid" src="~/Images/coverimage.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 700px;">
                             <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
                             <h3 class="display-4 text-white font-weight-semi-bold mb-4">Fashionable Dress</h3>
-                            <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                            <a asp-action="Shop" asp-controller="Home" class="btn btn-light py-2 px-3">Shop Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="height: 410px;">
-                        <img class="img-fluid" src="~/HomeAssets2/img/carousel-2.jpg" alt="Image">
+@*                     <div class="carousel-item" style="height: 60%;">>
+                        <img style="max-height:100%" class="img-fluid" src="~/HomeAssets2/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 700px;">
                             <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
                             <h3 class="display-4 text-white font-weight-semi-bold mb-4">Reasonable Price</h3>
-                            <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                            <a asp-action="Shop" asp-controller="Home" class="btn btn-light py-2 px-3">Shop Now</a>
                         </div>
-                    </div>
+                    </div> *@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
@@ -146,7 +156,7 @@
                 <div class="position-relative" style="z-index: 1;">
                     <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
                     <h1 class="mb-4 font-weight-semi-bold">Spring Collection</h1>
-                    <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                    <a asp-action="Shop" asp-controller="Home" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -156,7 +166,7 @@
                 <div class="position-relative" style="z-index: 1;">
                     <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
                     <h1 class="mb-4 font-weight-semi-bold">Winter Collection</h1>
-                    <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                    <a asp-action="Shop" asp-controller="Home" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -169,125 +179,34 @@
         <h2 class="section-title px-5"><span class="px-2">Trandy Products</span></h2>
     </div>
     <div class="row px-xl-5 pb-3">
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-1.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+        @foreach (var item in Model.Item2) {
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <a asp-action="ProductDetails" asp-controller="Home" asp-route-id="@item.Id">
+                            <img class="img-fluid w-100" src="@Url.Content("~/Images/" + item.Image1 )" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">@item.Name</h6>
+                        <div class="d-flex justify-content-center">
+                            <br />
+                            <h6>$@(item.PricePerDay - (item.DiscountValue / 100) * item.PricePerDay) per day</h6><h6 class="text-muted ml-2">
+                                <del>$@item.PricePerDay</del>
+                            </h6>
+                            <h6 style="display:block"><span style="color:red"> @item.DiscountValue% </span> off </h6>
+
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <a asp-action="ProductDetails" asp-controller="Home" asp-route-id="@item.Id" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                        @* 								<a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                    *@
                     </div>
                 </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-2.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                    </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-3.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                    </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-4.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                    </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-5.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                    </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-6.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                    </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                    <img class="img-fluid w-100" src="~/HomeAssets2/img/product-7.jpg" alt="">
-                </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
-                    <div class="d-flex justify-content-center">
-                        <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
-                    </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
-                </div>
-            </div>
-        </div>
+        }
+    
         <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
             <div class="card product-item border-0 mb-4">
                 <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
@@ -329,7 +248,7 @@
 </div>
 <!-- Subscribe End -->
 <!-- Products Start -->
-<div class="container-fluid pt-5">
+@* <div class="container-fluid pt-5">
     <div class="text-center mb-4">
         <h2 class="section-title px-5"><span class="px-2">Just Arrived</span></h2>
     </div>
@@ -472,13 +391,201 @@
         </div>
     </div>
 </div>
+ *@
 <!-- Products End -->
 
+<div class="elegant-testimonial-slider">
+    <div class="elegant-slider-container">
+        @foreach (var item in Model.Item3)
+        {
+            <div class="elegant-slide">
+                <p class="elegant-testimonial-text">This is the best service I've ever used!</p>
+                <p class="elegant-testimonial-author">@item.User.FirstName @item.User.LastName </p>
+                
+        </div>
+        }
+        </div>
+</div>
 
+<style>
+    .elegant-testimonial-slider {
+        position: relative;
+        max-width: 700px;
+        margin: 50px auto;
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
 
+    .elegant-slider-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
 
+    .elegant-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 40px;
+        text-align: center;
+    }
 
+    .elegant-testimonial-text {
+        font-size: 1.5em;
+        color: #444;
+        margin-bottom: 20px;
+        font-style: italic;
+        line-height: 1.6;
+        position: relative;
+    }
 
+        .elegant-testimonial-text::before,
+        .elegant-testimonial-text::after {
+            content: '"';
+            font-size: 2.5em;
+            color: #ccc;
+            position: absolute;
+        }
+
+        .elegant-testimonial-text::before {
+            left: -10px;
+            top: -10px;
+        }
+
+        .elegant-testimonial-text::after {
+            right: -10px;
+            bottom: -10px;
+        }
+
+    .elegant-testimonial-author {
+        font-size: 1.2em;
+        color: #888;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    .elegant-slider-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .elegant-prev-btn,
+    .elegant-next-btn {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: none;
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        pointer-events: all;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+    }
+
+        .elegant-prev-btn:hover,
+        .elegant-next-btn:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+    .elegant-prev-btn {
+        margin-left: 15px;
+    }
+
+    .elegant-next-btn {
+        margin-right: 15px;
+    }
+
+</style>
+
+@* <div class="custom-testimonial-slider">
+    <div class="custom-slider-container">
+        @foreach(var item in Model.Item3){
+            <div class="custom-slide">
+                <p class="custom-testimonial-text">"This is the best service I've ever used!"</p>
+                <p class="custom-testimonial-author">@item.User.FirstName @item.User.LastName</p>
+        </div>}
+        <div class="custom-slide">
+            <p class="custom-testimonial-text">"Amazing experience, highly recommend."</p>
+            <p class="custom-testimonial-author">- Jane Smith</p>
+        </div>
+        <div class="custom-slide">
+            <p class="custom-testimonial-text">"Fantastic results and excellent customer service."</p>
+            <p class="custom-testimonial-author">- Emily Johnson</p>
+        </div>
+    </div>
+    <div class="custom-slider-controls">
+        <button class="custom-prev-btn">&#10094;</button>
+        <button class="custom-next-btn">&#10095;</button>
+    </div>
+</div>
+<style>
+    .custom-testimonial-slider {
+        position: relative;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-slider-container {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .custom-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .custom-testimonial-text {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    .custom-testimonial-author {
+        font-size: 1em;
+        color: #555;
+    }
+
+    .custom-slider-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .custom-prev-btn,
+    .custom-next-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        pointer-events: all;
+        border-radius: 50%;
+    }
+
+        .custom-prev-btn:hover,
+        .custom-next-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+</style>
+
+ *@
 <!-- Vendor Start -->
 <div class="container-fluid py-5">
     <div class="row px-xl-5">
@@ -531,4 +638,36 @@
         });
 </script>
 
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const slides = document.querySelectorAll('.elegant-slide');
+        const prevBtn = document.querySelector('.elegant-prev-btn');
+        const nextBtn = document.querySelector('.elegant-next-btn');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slideWidth = slides[0].clientWidth;
+            const offset = -index * slideWidth;
+            document.querySelector('.elegant-slider-container').style.transform = `translateX(${offset}px)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // Optionally, auto-slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    });
 </script>

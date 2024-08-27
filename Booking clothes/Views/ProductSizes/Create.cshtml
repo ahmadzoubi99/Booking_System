@@ -11,9 +11,8 @@
             <div class="card mb-4" style="padding-left:25px">
                 <div class="card-header pb-0">
                     <h6 style="margin-bottom:20px">
-                        Categories
+                        Prodcut size
                     </h6>
-                    <a href="c:\users\coding school\desktop\finalproject\new project\booking clothes\booking clothes\views\productsizes\create.cshtml">c:\users\coding school\desktop\finalproject\new project\booking clothes\booking clothes\views\productsizes\create.cshtml</a>
                 </div>
                 <div class="card-body px-0 pt-0 pb-2">
                     <div class="table-responsive p-0">
@@ -27,9 +26,9 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="form-group" hidden>
                 <label asp-for="Quantity" class="control-label"></label>
-                <input asp-for="Quantity" class="form-control" />
+                <input asp-for="Quantity"value="1" class="form-control" />
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">

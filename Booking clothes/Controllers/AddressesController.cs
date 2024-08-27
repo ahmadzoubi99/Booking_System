@@ -50,6 +50,25 @@ namespace Booking_clothes.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateAddress([Bind("Id,FirstName,LastName,Email,MobileNo,AddressLine1,AddressLine2,Country,City,State,ZipCode")] Address address)
+        {
+            try
+            {
+                _context.Add(address);
+                await _context.SaveChangesAsync();
+
+                return Json(new { success = true, message = "Address created successfully!" });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (optional)
+                return Json(new { success = false, message = "An error occurred while creating the product. Please try again." });
+            }
+        }
+
+
 
         // POST: Addresses/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
